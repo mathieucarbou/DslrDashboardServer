@@ -1,3 +1,5 @@
+# https://github.com/aormsby/Fork-Sync-With-Upstream-action
+
 name: Sync
 on:
   schedule:
@@ -13,7 +15,7 @@ jobs:
     - name: Checkout master
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: clone
         
     - name: Pull upstream changes
       id: sync
