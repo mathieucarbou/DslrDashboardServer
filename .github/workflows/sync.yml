@@ -9,15 +9,15 @@ on:
 jobs:
   sync_with_upstream:
     runs-on: ubuntu-latest
-    name: Sync master with upstream latest
+    name: "Sync: master"
 
     steps:
-    - name: checkout-master
+    - name: "Checkout: master"
       uses: actions/checkout@v2
       with:
         ref: master
         
-    - name: sync-master
+    - name: "Sync: naster"
       id: sync-master
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
