@@ -15,7 +15,7 @@ jobs:
     - name: checkout-master
       uses: actions/checkout@v2
       with:
-        ref: clone
+        ref: master
         
     - name: sync-master
       id: sync-master
@@ -23,7 +23,7 @@ jobs:
       with:
         upstream_repository: hubaiz/DslrDashboardServer
         upstream_branch: master
-        target_branch: clone
+        target_branch: master
 
     - name: Timestamp
       run: date
