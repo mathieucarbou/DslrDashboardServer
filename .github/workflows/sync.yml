@@ -12,13 +12,13 @@ jobs:
     name: Sync master with upstream latest
 
     steps:
-    - name: Checkout master
+    - name: checkout-master
       uses: actions/checkout@v2
       with:
         ref: clone
         
-    - name: Pull upstream changes
-      id: sync
+    - name: sync-master
+      id: sync-master
       uses: aormsby/Fork-Sync-With-Upstream-action@v2.2
       with:
         upstream_repository: hubaiz/DslrDashboardServer
