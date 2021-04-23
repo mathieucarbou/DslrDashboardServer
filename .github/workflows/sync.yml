@@ -19,7 +19,7 @@ jobs:
         
     - name: sync-master
       id: sync-master
-      uses: aormsby/Fork-Sync-With-Upstream-action@v2.2
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: hubaiz/DslrDashboardServer
         upstream_branch: master
